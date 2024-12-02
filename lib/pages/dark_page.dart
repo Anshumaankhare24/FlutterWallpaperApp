@@ -12,24 +12,7 @@ class DarkPage extends StatefulWidget {
 
 class _MyDarkPage extends State<DarkPage> {
   var arrDark = [
-    "assets/images/dark/dark (1).jpg",
-    "assets/images/dark/dark (2).jpg",
-    "assets/images/dark/dark (3).jpg",
-    "assets/images/dark/dark (4).jpg",
-    "assets/images/dark/dark (5).jpg",
-    "assets/images/dark/dark (6).jpg",
-    "assets/images/dark/dark (7).jpg",
-    "assets/images/dark/dark (8).jpg",
-    "assets/images/dark/dark (9).jpg",
-    "assets/images/dark/dark (10).jpg",
-    "assets/images/dark/dark (11).jpg",
-    "assets/images/dark/dark (12).jpg",
-    "assets/images/dark/dark (13).jpg",
-    "assets/images/dark/dark (14).jpg",
-    "assets/images/dark/dark (15).jpg",
-    "assets/images/dark/dark (16).jpg",
-    "assets/images/dark/dark (17).jpg",
-    "assets/images/dark/dark (18).jpg",
+    "assets/images/dark/dark.jpg",
   ];
   @override
   Widget build(BuildContext context) {

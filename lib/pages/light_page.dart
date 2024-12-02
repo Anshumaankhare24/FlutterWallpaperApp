@@ -12,24 +12,7 @@ class LightPage extends StatefulWidget {
 
 class _LightPageState extends State<LightPage> {
   var arrLight = [
-    "assets/images/light/light (1).jpg",
-    "assets/images/light/light (2).jpg",
-    "assets/images/light/light (3).jpg",
-    "assets/images/light/light (4).jpg",
-    "assets/images/light/light (5).jpg",
-    "assets/images/light/light (6).jpg",
-    "assets/images/light/light (7).jpg",
-    "assets/images/light/light (8).jpg",
-    "assets/images/light/light (9).jpg",
-    "assets/images/light/light (10).jpg",
-    "assets/images/light/light (11).jpg",
-    "assets/images/light/light (12).jpg",
-    "assets/images/light/light (13).jpg",
-    "assets/images/light/light (14).jpg",
-    "assets/images/light/light (15).jpg",
-    "assets/images/light/light (16).jpg",
-    "assets/images/light/light (17).jpg",
-    "assets/images/light/light (18).jpg",
+    "assets/images/light/light.jpg",
   ];
   @override
   Widget build(BuildContext context) {

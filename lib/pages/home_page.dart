@@ -111,8 +111,8 @@ class _HomePageState extends State<Homepage> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(15),
                               image: DecorationImage(
-                                  image: AssetImage(
-                                      'assets/images/dark/dark (21).jpg'),
+                                  image:
+                                      AssetImage('assets/images/dark/dark.jpg'),
                                   fit: BoxFit.cover),
                             ),
                           )
@@ -146,7 +146,7 @@ class _HomePageState extends State<Homepage> {
                               borderRadius: BorderRadius.circular(15),
                               image: DecorationImage(
                                   image: AssetImage(
-                                      'assets/images/light/light (21).jpg'),
+                                      'assets/images/light/light.jpg'),
                                   fit: BoxFit.cover),
                             ),
                           )
