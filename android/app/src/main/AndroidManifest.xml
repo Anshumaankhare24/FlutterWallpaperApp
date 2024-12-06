@@ -3,7 +3,7 @@
 <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
-        android:label="wapaper"
+        android:label="Wallpaper"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
