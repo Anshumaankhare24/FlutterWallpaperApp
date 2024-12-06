@@ -1,11 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import './pages/home_page.dart';
-import './pages/dark_page.dart';
-import './pages/light_page.dart';
+import 'pages/splash_screen.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -16,12 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
-      routes: {
-        "/homepage": (context) => Homepage(),
-        "/darkpage": (context) => DarkPage(),
-        "/lightpage": (context) => LightPage(),
-      },
+      home: SplashScreen(),
     );
   }
 }

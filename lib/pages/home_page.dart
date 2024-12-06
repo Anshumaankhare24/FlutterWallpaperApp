@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:Wallpaper/pages/dark_page.dart';
+import 'package:Wallpaper/pages/light_page.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -13,6 +15,8 @@ class Homepage extends StatefulWidget {
 class _HomePageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
         backgroundColor: Colors.black,
         body: SafeArea(
@@ -59,7 +63,11 @@ class _HomePageState extends State<Homepage> {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, "/darkpage");
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const DarkPage()),
+                        );
                       },
                       child: Container(
                         child: FaIcon(
@@ -71,7 +79,11 @@ class _HomePageState extends State<Homepage> {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, "/lightpage");
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const LightPage()),
+                        );
                       },
                       child: Container(
                         child: FaIcon(
@@ -91,14 +103,18 @@ class _HomePageState extends State<Homepage> {
                   ),
                   InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, "/darkpage");
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const DarkPage()),
+                      );
                     },
                     child: Container(
                       child: Column(
                         children: [
                           Container(
-                            height: 160,
-                            width: 400,
+                            height: screenHeight * 0.18,
+                            width: screenWidth * 0.9,
                             child: Center(
                               child: Text(
                                 "Dark",
@@ -125,14 +141,18 @@ class _HomePageState extends State<Homepage> {
                   ),
                   InkWell(
                     onTap: () {
-                      Navigator.pushNamed(context, "/lightpage");
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LightPage()),
+                      );
                     },
                     child: Container(
                       child: Column(
                         children: [
                           Container(
-                            height: 160,
-                            width: 400,
+                            height: screenHeight * 0.18,
+                            width: screenWidth * 0.9,
                             child: Center(
                               child: Text(
                                 "Light",
