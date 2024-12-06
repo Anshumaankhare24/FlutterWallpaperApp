@@ -37,11 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
   http: ^1.2.2
-  flutter_launcher_icons: "^0.14.2"
 
-flutter_launcher_icons:
-  android: "launcher_icon"
-  image_path: "assets/images/LOGO.ico"
 
 
 
